@@ -1,0 +1,257 @@
+<!doctype html>
+<!--
+	Front-end Web developer Worksheet(Template)
+	Version: 1.0
+-->
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="worksheet.min.css">
+	<style>
+		/* User style */
+	</style>
+	<script src="worksheet.min.js"></script>
+	<script>
+		/* User script(setting) */
+		$(function() {
+			$('body').feWorksheet({
+				// Options
+			});
+		});
+	</script>
+</head>
+<body>
+	<header><h1><em>Project Title</em>, Front-end Web developer Worksheet</h1></header>
+	<!-- noticeWrap -->
+	<section class="noticeWrap">
+		<h2>Notice</h2>
+		<ul>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, veniam, iusto velit magni voluptatem iste quisquam voluptatibus harum? Provident, voluptatum quisquam veritatis veniam inventore rerum tempore nostrum odio possimus facilis.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, unde.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, nostrum laborum neque aspernatur amet odit veritatis ad esse rem deserunt!</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, sequi, optio molestias sint blanditiis ullam mollitia ipsam deleniti sit aut accusantium aliquid dolore fugiat voluptates suscipit veritatis harum aspernatur nisi recusandae quasi ab a quis perferendis? Quas, distinctio, necessitatibus, excepturi laudantium fuga possimus voluptates alias minima tempore omnis in inventore.</li>
+		</ul>
+	</section>
+	<!-- //noticeWrap -->
+	<!-- filterWrap -->
+	<section class="filterWrap">
+		<h2>Task Key/Filter</h2>
+		<form action="/">
+			<fieldset>
+				<legend>Filter option(It'll be automatically applied)</legend>
+				<label><input type="checkbox" value="all">All</label>
+				<label><input type="checkbox"><b class='default'>0</b><i>Undone</i></label>
+				<label><input type="checkbox"><b>1</b><i>Done</i></label>
+				<label><input type="checkbox"><b>2</b><i>Modify</i></label>
+				<label><input type="checkbox"><b>3</b><i>Dev</i></label>
+				<label><input type="checkbox"><b>4</b><i>SampleTask</i></label>
+			</fieldset>
+		</form>
+	</section>
+	<!-- //filterWrap -->
+	<!-- Worksheet -->
+	<section>
+		<h2>Worksheet</h2>
+		<h3>GNB Title 1</h3>
+		<table>
+			<caption>gnb1forlder</caption>
+			<thead>
+				<tr>
+					<th scope="col" class="menuDepth">Depth1</th>
+					<th scope="col" class="menuDepth">Depth2</th>
+					<th scope="col" class="menuDepth">Depth3</th>
+					<th scope="col" class="filePath">File Path</th>
+					<th scope="col" class="fileName">File Name/ID</th>
+					<th scope="col" class="dueDate">Due Date</th>
+					<th scope="col" class="issueMemo">Issue/Memo</th>
+					<th scope="col" class="checkTask">Task</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="menuDepth">Sample SubMain1</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="filePath"></td>
+					<td class="fileName">SampleSubMain1.html</td>
+					<td class="dueDate">2013-12-31</td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth">Sample SubMain2</td>
+					<td class="menuDepth">Foo</td>
+					<td class="menuDepth"></td>
+					<td class="filePath">dummy</td>
+					<td class="fileName">SampleSubMain2.php</td>
+					<td class="dueDate">2013-01-01</td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">2</td>
+				</tr>
+				<tr>
+					<td class="menuDepth">Smaple3</td>
+					<td class="menuDepth">Sub1</td>
+					<td class="menuDepth"></td>
+					<td class="filePath"></td>
+					<td class="fileName">sample3.jsp</td>
+					<td class="dueDate"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">3</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">Layer</td>
+					<td class="filePath"></td>
+					<td class="fileName">sample3Layer.html</td>
+					<td class="dueDate"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask"></td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">Tab1</td>
+					<td class="filePath"></td>
+					<td class="fileName">sample3_tab.php</td>
+					<td class="dueDate"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">4</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">Tab2</td>
+					<td class="filePath"></td>
+					<td class="fileName">sample3_tab.php</td>
+					<td class="dueDate"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask"></td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">Sub2</td>
+					<td class="menuDepth"></td>
+					<td class="filePath"></td>
+					<td class="fileName">sample3_tab.php</td>
+					<td class="dueDate"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask"></td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>GNB Title 2</h3>
+		<table>
+			<caption>gnb2forlder</caption>
+			<thead>
+				<tr>
+					<th scope="col" class="menuDepth">Depth1</th>
+					<th scope="col" class="menuDepth">Depth2</th>
+					<th scope="col" class="menuDepth">Depth3</th>
+					<th scope="col" class="menuDepth">Depth4</th>
+					<th scope="col" class="menuDepth">Depth5</th>
+					<th scope="col" class="filePath">File Path</th>
+					<th scope="col" class="fileName">File Name/ID</th>
+					<th scope="col" class="dueDate">Due Date</th>
+					<th scope="col" class="issueMemo">Issue/Memo</th>
+					<th scope="col" class="checkTask">Task</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="menuDepth">A1</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="filePath"></td>
+					<td class="fileName"></td>
+					<td class="dueDate"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask"></td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">A1-B1</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="filePath"></td>
+					<td class="fileName"></td>
+					<td class="dueDate"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask"></td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">A1-B1-C1</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="filePath"></td>
+					<td class="fileName"></td>
+					<td class="dueDate"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask"></td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">A1-B1-C1-D1</td>
+					<td class="menuDepth"></td>
+					<td class="filePath"></td>
+					<td class="fileName"></td>
+					<td class="dueDate"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask"></td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">A1-B1-C1-D1-E1</td>
+					<td class="filePath"></td>
+					<td class="fileName"></td>
+					<td class="dueDate"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask"></td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>GNB Title 3</h3>
+		<table>
+			<caption>gnb3_forlder</caption>
+			<thead>
+				<tr>
+					<th scope="col" class="menuDepth">Depth1</th>
+					<th scope="col" class="menuDepth">Depth2</th>
+					<th scope="col" class="menuDepth">Depth3</th>
+					<th scope="col" class="menuDepth">Depth4</th>
+					<th scope="col" class="filePath">File Path</th>
+					<th scope="col" class="fileName">File Name/ID</th>
+					<th scope="col" class="dueDate">Due Date</th>
+					<th scope="col" class="issueMemo">Issue/Memo</th>
+					<th scope="col" class="checkTask">Task</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="filePath"></td>
+					<td class="fileName"></td>
+					<td class="dueDate"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!-- //Worksheet -->
+</body>
+</html>
