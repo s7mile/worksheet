@@ -1,5 +1,4 @@
 # Front-end Web developer Worksheet
-
 사내 프로젝트 진행 시 인터넷이 연결되어 있지 않은 환경(혹은 로컬환경)에서, 코딩 단의 작업 결과물 공유와 기타 업무 공유를 위해 HTML 문서 형태의 파일을 공유하여 사용하도록 합니다.
 
 현재 일부 개별적으로 사용 중인 워크시트 파일이 특정 프로젝트에서 사용하도록 작성된 Dummy 형식의 파일로 코드 관리가 되지 않으며, 주 사용자들의 사용성을 높이고, 효율적인 코드 관리를 위해 사내 공식 워크시트를 공유합니다.
@@ -8,7 +7,6 @@
 - 파일 내려받기(다른 이름으로 대상 저장): [HTML](http://cidow.com/worksheet/worksheet.html), [CSS](http://cidow.com/worksheet/worksheet.min.css), [JS](http://cidow.com/worksheet/worksheet.min.js)
 
 ## How to use
-
 사용 시 배포되는 HTML, CSS, JS 파일을 내려받아 HTML 파일만 해당 프로젝트에 맞게 수정하여 사용하며, 코드 관리를 위해 수정이 필요한 부분은 해당 내용을 공유하여 수정/배포가 될 수 있도록 합니다.
 
 워크시트의 기본 기능은 아래와 같습니다.
@@ -22,6 +20,8 @@
 - Number 셀 자동 생성
 - File Name 링크 자동 연결
 - Due Date 날짜 비교 후 class 할당
+
+각 부분별 상세 내용은 아래와 같으며, 기본 지정된 class를 기준으로 설명 하였습니다.
 
 ### Add Task
 필요한 단계만큼 아래의 예시와 같이 &lt;label&gt; ~ &lt;/label&gt;을 생성하여, &lt;b&gt;, &lt;i&gt;태그를 해당 프로젝트에 맞게 변경하여 사용합니다.
@@ -58,6 +58,19 @@
 <label><input type="checkbox" value="all">All</label>
 ```
 
+### File Name
+워크시트의 .fileName 셀에 파일명 입력 시, __&lt;caption&gt; 에 작성된 폴더명(경로)과 .filePath 셀에 작성된 폴더명(경로)__을 기준으로 앵커 태그가 자동으로 생성됩니다. (자동으로 생성되는 링크가 아닌, 특정 위치로 링크를 원하는 경우 직접 앵커 태그를 연결해 주시면 됩니다.)
+
+
+```html
+<caption>gnb1forlder</caption>
+<td class="filePath">dummy</td>
+<td class="fileName">SampleSubMain2.php</td>
+```
+
+```html
+<td class="fileName"><a target="_blank" href="/gnb1forlder/dummy/SampleSubMain2.php">SampleSubMain2.php</td>
+```
 
 ### Turn-Off Theme, Aside, Delay info
 기본 플러그인 옵션 변경 방식과 같으며, 기본 테마만을 사용하거나 도움말, 딜레이 정보 기능이 불필요하다고 판단될 경우 아래와 같이 사용하지 않도록 설정할 수 있습니다.
